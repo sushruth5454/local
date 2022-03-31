@@ -1,0 +1,11 @@
+wbdo setup
+add user in  security.xml
+
+
+add reddis server in server.env
+VCAP_APPLICATION=redis
+VCAP_SERVICES={"p.redis": [{ "credentials": { "host": "localhost", "password": "", "port": 6379 }, "syslog_drain_url": null, "volume_mounts": [], "label": "p.redis", "provider": null, "plan": "shared-vm", "name": "ReplicableCache", "tags": [ "pivotal", "redis" ] } ]}
+
+
+replace 21st Line in W2RestEndPoint.xml with below command
+<property name="W2RestServer" comment="Rest End Point">https://wbdo-service-qa.apps.pp01i.edc1.cf.ford.com/</property>

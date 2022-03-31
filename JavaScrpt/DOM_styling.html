@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM styling</title>
+    <style>
+        .red{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changeStyle()">Change Style</button>
+    <h2 id="main">Heading</h2>
+    <h2 id="sub">welcome</h2>
+    <h2 id="subsub">to JavaScript</h2>
+    <p>
+        Sorts the specified list into ascending order, according to the natural ordering of its elements. All elements in the list must implement the Comparable interface. Furthermore, all elements in the list must be mutually comparable (that is, e1.compareTo(e2) must not throw a ClassCastException for any elements e1 and e2 in the list).
+This sort is guaranteed to be stable: equal elements will not be reordered as a result of the sort.
+
+The specified list must be modifiable, but need not be resizable.
+
+Implementation note: This implementation is a stable, adaptive, iterative mergesort that requires far fewer than n lg(n) comparisons when the input array is partially sorted, while offering the performance of a traditional mergesort when the input array is randomly ordered. If the input array is nearly sorted, the implementation requires approximately n comparisons. Temporary storage requirements vary from a small constant for nearly sorted input arrays to n/2 object references for randomly ordered input arrays.
+
+The implementation takes equal advantage of ascending and descending order in its input array, and can take advantage of ascending and descending order in different parts of the same input array. It is well-suited to merging two or more sorted arrays: simply concatenate the arrays and sort the resulting array.
+
+The implementation was adapted from Tim Peters's list sort for Python ( TimSort). It uses techiques from Peter McIlroy's "Optimistic Sorting and Information Theoretic Complexity", in Proceedings of the Fourth Annual ACM-SIAM Symposium on Discrete Algorithms, pp 467-474, January 1993.
+
+This implementation dumps the specified list into an array, sorts the array, and iterates over the list resetting each element from the corresponding position in the array. This avoids the n2 log(n) performance that would result from attempting to sort a linked list in place.
+    </p>
+
+    <script>
+        //select the element
+        let mainOb=document.getElementById("main");
+        //apply changges
+        const changeStyle=()=>{mainOb.style.color="green";
+        mainOb.style.fontSize="50px";
+        mainOb.style.border="1px solid red";
+        mainOb.style.padding="20px";
+        //mainOb.style.background="#e2e2e2";
+        document.body.style.background="red";
+        document.body.style.color="white";
+        mainOb.className=mainOb.className+"red";
+    };
+    </script>
+    
+</body>
+</html>

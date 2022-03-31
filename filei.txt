@@ -1,0 +1,3 @@
+We are writing through Buffer into char Stream...
+hello all
+how are you

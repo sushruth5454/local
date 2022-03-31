@@ -1,0 +1,5 @@
+strict-ssl=false
+proxy=http://internet.ford.com:83/
+http-proxy=http://internet.ford.com:83
+https-proxy=http://internet.ford.com:83/
+registry=https://www.nexus.ford.com/repository/npmjs/

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Getter And Setter</title>
+</head>
+<body>
+    <script>
+        let student={
+            name:"sushruth",
+            college:"Vasavi College",
+            city:"Sangareddy",
+
+            set setName(name){
+                this.name=name;
+            },
+            set setCollege(college){
+                this.college=college;
+            },
+            get getName(){
+                return this.name;
+            },
+            get getCollege(){
+                return this.college;
+            },
+
+            display:function(){
+                return `${this.name} : ${this.college} :${this.city}`
+            }
+        };
+        console.log(student.display());
+        student.setName="tada";
+        // student.name="shiva";
+        console.log(student.display());
+
+
+        // Constructor
+        function person(id,name,age){
+            this.personId=id;
+            this.personName=name;
+            this.personAge=age;
+            this.display=function(){
+                return this.personId+" "+this.personName+" "+this.personAge;
+            };
+        }
+        let person1=new person(21,"sushruth",23);
+        // console.log(person1.name);
+        console.log(person1.display());
+    </script>
+</body>
+</html>

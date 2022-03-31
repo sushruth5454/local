@@ -1,0 +1,81 @@
+
+WBDO and CXRCM
+
+
+WBDO -> customerInfo.jsp
+
+buildParametersIfPresent - Method
+
+if(!checkEmpty(cxrcmToken)) {
+		urlWithParameters = urlWithParameters + 'access_token='+ cxrcmToken + '&';
+	}
+	if (!checkEmpty(customerId)) {
+		urlWithParameters = urlWithParameters + 'guid='+customerId +'&';
+	}
+	if (!checkEmpty(firstName)) {
+		urlWithParameters = urlWithParameters + 'firstName='+firstName + '&';
+	}
+	if (!checkEmpty(lastName)) {
+		urlWithParameters = urlWithParameters + 'lastName='+ encodeURIComponent(lastName) + '&';
+	}
+	
+	
+	add action paratmeter | ex: action=add or action=submit
+	
+	
+CXRCM 
+
+CXRCM 
+
+
+http://localhost:4200/#/cxrcm-page?action=add&access_token=    =>> Save
+
+http://localhost:4200/#/cxrcm-page?action=add&access_token=    =>> Submit 
+
+
+
+
+add only add
+if not then it is save
+
+
+
+
+--------------------
+set the node js path (.exe path)
+run npm installer
+cmd:
+npm config set registry=https://www.nexus.ford.com/repository/npmjs/
+then npm install
+
+serach proxy and will get HTPP proxy and give www.google.com 
+
+
+
+
+npm config set strict-ssl=false
+
+npm config set proxy http://internet.ford.com:83
+npm config set http-proxy http://internet.ford.com:83
+npm config set https-proxy http://internet.ford.com:83
+npm config set registry=https://www.nexus.ford.com/repository/npmjs/
+
+npm install
+if get exception,
+
+npm rebuild node-sass
+
+
+npm node-sass -v
+
+
+npm uninstall node-sass
+npm install node-sass@4.14.1
+
+we have in the machine is: 6.14.13
+npm install node-sass@6.14.13
+---------------------------------
+
+npm rebuild node-sass
+
+npm uninstall node-sass && npm install node-sass

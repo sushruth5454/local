@@ -1,0 +1,14 @@
+Install the Node 12 version and run the following 
+
+Go to the project folder in command prompt(Change directory to project folder)
+
+1) node -v 
+2)npm config set strict-ssl=false
+3)npm config set proxy http://internet.ford.com:83
+4)npm config set http-proxy http://internet.ford.com:83
+5)npm config set https-proxy http://internet.ford.com:83
+6)npm config set registry=https://www.nexus.ford.com/repository/npmjs/
+7)npm install
+8)npm rebuild node-sass
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Get Set Attributes</title>
+</head>
+<body>
+    <a class="test" id="url" href="https://www.google.com">Google</a>;
+    <button onclick="get()">Get</button>
+    <button onclick="set()">Set</button>
+    <script>
+        const get=()=>{
+            urlOb=document.getElementById("url");
+            console.log(urlOb.getAttribute("href"));
+            console.log(urlOb.getAttribute("id"));
+            console.log(urlOb.getAttribute("class"));
+        };
+        const set=()=>{
+            urlOb=document.getElementById("url");
+            urlOb.setAttribute("href","https://www.youtube.com/");
+            console.log(urlOb.getAttribute("href"));
+        }
+    </script>
+    
+</body>
+</html>

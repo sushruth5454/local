@@ -1,0 +1,19 @@
+Core java -1.6-1.8
+Html
+Servlet JSP JDBC - any database
+
+Frameworks:
+spring
+WebServices -Soap,Rest-important
+spring boot -MicroServices
+
+JavaScript Jquery Ajax
+_____________________________________
+Angular React Node
+
+Cloud
+Aws or Azure or PCF
+
+Devops
+git ,Jenkins
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM Selectors</h1>
+    <h2 id="Banner">Welcome to our page</h2>
+    <script>
+        let ht=document.documentElement;
+        console.log(ht);
+        let h2=document.getElementById("Banner");
+        // setInterval(function(){
+        //     h2.style.color="red";
+        //     h2.style.color="green";
+        // },300);
+        h2.style.color="green";
+        console.log(h2);
+        setTimeout(function(){
+            h2.innerHTML="Thank you";
+        },30000);
+        console.log(h2);
+
+    </script>
+    
+</body>
+</html>

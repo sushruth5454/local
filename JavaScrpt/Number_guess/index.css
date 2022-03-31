@@ -1,0 +1,10 @@
+#section-3{
+    display: none;
+}
+#section-2{
+    display: none;
+}
+.background{
+    background-color:black;
+    color: white;
+}

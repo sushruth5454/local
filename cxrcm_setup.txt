@@ -1,0 +1,44 @@
+set node js path (node.exe)
+run npm installer and if proxy error occures
+search proxy and click check connection and give url as www.google.com and click ok and run npm install
+
+
+open the command prompt and open directory of cxrcm and type npm install
+
+"path of cxrcm" npm install
+
+if npm ()cb error occures then run the below command
+
+npm config set strict-ssl=false
+
+if github error-proxy error
+
+npm config set proxy  -> 3 commands
+
+again run npm install
+
+
+In webstorm right click on properties.json and click show npm scripts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+run the command ""

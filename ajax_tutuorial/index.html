@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>welcome to home page</h2>
+    <h2>we are learning ajax</h2>
+    <h1><a href="about.html">ABOUT Page</a></h1>
+    <button onclick="loadAboutInformation()">Load About</button>
+    <button id="btn">Load Using Jquery</button>
+    <div id="container">
+
+    </div>
+    <div id="jqcontainer">
+
+    </div>
+
+    <!-- Using JavaScript -->
+    <script>
+        function loadAboutInformation(){
+            //call to ajax
+            //about.html
+            var request =new XMLHttpRequest();
+            request.open("GET","about.html");
+            request.onreadystatechange=function(){
+
+                //call whenever statechange
+                if(this.readyState==4 && this.status==200){
+                    //request is completed successfully
+                    console.log(this.responseText);
+                    document.getElementById("container").innerHTML=this.responseText;
+                }
+            };
+            request.send();
+        }
+    </script>
+
+    <!-- Using Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $("#btn").click(function(){
+            $.get("about.html",function(data){
+                $("#jqcontainer").html(data);
+                
+            });
+        });
+    </script>
+</body>
+</html>

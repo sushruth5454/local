@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bulb-container{
+            margin: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="turnOn()">Turn ON</button>
+    <button onclick="turnOff()">Turn OFF</button>
+    <button id="switch" onclick="inverse()">OFF</button>
+    <div class="bulb-container">
+    <img id="bulb" src="OFFbulb.jpg">
+    </div>
+    <script>
+        const turnOn=()=>{
+            let bulbObj=document.getElementById("bulb");
+            bulbObj.setAttribute("src","ONbulb.jpg");
+        }
+        const turnOff=()=>{
+            let bulbObj=document.getElementById("bulb");
+            bulbObj.setAttribute("src","OFFbulb.jpg");
+
+        }
+        const inverse=()=>{
+            let bulbObj=document.getElementById("bulb");
+            console.log(bulbObj);
+            let bulbState=bulbObj.getAttribute("src");
+            //console.log(bulbStatus);
+            let bulbStatusObj=document.getElementById("switch");
+            //let bulbStatus=bulbStatusObj.innerHTML;
+            if(bulbState=="ONbulb.jpg"){
+                turnOff();
+                bulbStatusObj.innerHTML="ON";
+                //switchObj.setAttribute("innerHtml","ON");
+            }
+            else{
+                turnOn();
+                bulbStatusObj.innerHTML="OFF";
+                //switchObj.setAttribute("innerHtml","OFF");
+            }
+        }
+    </script>
+</body>
+</html>

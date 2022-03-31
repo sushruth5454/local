@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">Hello World</h1>
+        <p id="hint">This is Sample para</p>
+    </div>
+    <button onclick="create()">AddNode</button>
+    <script>
+        function create(){
+            let divElement=document.createElement("div");
+            console.log(divElement);
+            let textElement=document.createTextNode("Hello how are you ?");
+            let textElement1=document.createTextNode("Iam fine :)");
+            divElement.appendChild(textElement);
+            divElement.appendChild(textElement1);
+            let mainElement=document.getElementById("main");
+            mainElement.appendChild(divElement);
+            let titleElement=document.getElementById("title");
+            let hintElement=document.getElementById("hint");
+            mainElement.replaceChild(titleElement,hintElement);
+        }
+    </script>
+</body>
+</html>

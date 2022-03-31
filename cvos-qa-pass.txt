@@ -1,0 +1,17 @@
+cvos -qa
+1)go to github and search where qa password is there
+2)go to navos repository
+3)search CVOSQA->go to code->and search if it is there if not 
+go to CVOSQA url in Internet Explorer->adminstration-support->dynaprop adminweb ->CVOS credentials->click expand all ->OL cvosqa
+
+
+prx-oegc-appl
+1)go to github and search where prx-oegc-appl password is there
+
+go to github and see password is there 
+
+navos-service-fleet-qa-properties
+amendment-constraints-service-dev.properties
+amendment-constraints-service-qa.properties
+navos-service-fleet-dev-properties
+navos-service-fleet.properties

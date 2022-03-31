@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Navigation</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Hello ALl</h1>
+        <p>
+            <span>Iam LEarning JavaScript</span>
+        </p>
+        <h2>It is a very powerful language</h2>    
+    </div>
+    <button onclick="change()">Change</button>
+    <script>
+        function change(){
+        let containerObj=document.getElementById("container");
+        console.log(containerObj.firstElementChild.nodeName);
+        let firstChildObj=containerObj.firstElementChild;
+        firstChildObj.style.color="red";
+        firstChildObj.style.background="blue";
+        let lastChildObj=containerObj.lastElementChild;
+        lastChildObj.innerHTML="Really Good!!";
+        lastChildObj.style.color="green";
+        lastChildObj.style.background="white";
+        }
+    </script>
+    
+</body>
+</html>
